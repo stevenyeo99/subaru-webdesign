@@ -26,6 +26,26 @@ body {
     vertical-align: middle;
 }
 
+.benefit-card, .benefit-card-model {
+    overflow: hidden;
+}
+
+.benefit-card:hover, .benefit-card-model {
+    cursor: pointer;
+}
+
+.benefit-card-model:hover {
+    filter: brightness(50%);
+    opacity: 0.5;
+    transition: all 1s ease;
+}
+
+.benefit-card:hover img,
+.benefit-card-model:hover img {
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
 #footer-subaru {
     height: 20vh;
 }
